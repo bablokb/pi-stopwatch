@@ -28,10 +28,10 @@ The setup uses the following hardware-components:
   - one normal button for "Start"
   - one normal button for "Reset"
   - one mini-oled display
-  - one buzzer
+  - one active buzzer
   - some jumper-wires
 
-![](image.png)
+![](pi-stopwatch.png)
 
 
 Software
@@ -43,5 +43,5 @@ Run
     cd pi-stopwatch
     sudo tools/install
 
-to install the software and some prerequisite packages. This will also enable
+To install the software and some prerequisite packages. This will also enable
 a systemd-service so that the service starts at boot-time.
