@@ -83,7 +83,7 @@ configure_system() {
     reboot="yes"
   fi
 
-  if [ -n "$reboot"]; then
+  if [ -n "$reboot" ]; then
     echo -e "[INFO] reboot the system to activate the changes" 2>&1
   fi
 }
