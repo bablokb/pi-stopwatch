@@ -1,0 +1,22 @@
+# --------------------------------------------------------------------------
+# Systemd service Definition for pi-stopwatch.service.
+#
+# The service starts the script /usr/local/sbin/pi-stopwatch.py
+#
+# Author: Bernhard Bablok
+# License: GPL3
+#
+# Website: https://github.com/bablokb/pi-stopwatch
+#
+# --------------------------------------------------------------------------
+
+[Unit]
+Description=pi-stopwatch service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/pi-stopwatch.py
+
+[Install]
+WantedBy=multi-user.target
