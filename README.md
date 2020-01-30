@@ -14,10 +14,12 @@ stops the watch as soon as the GPIO changes to low.
 The main rationale for this project was to measure boot-times of a second Pi
 from power on up to the timepoint when an application program starts. In
 this scenario, the "start" GPIO is connected to an enable-pin
-of the power-supply of the second Pi. This could be a bucket-converter
+of the power-supply of the second Pi. This could be a bucket-converter,
+an [usb-powerswitch](https://www.tindie.com/products/8086net/usb-power-switch/),
 or maybe a wide-input shim from Pimoroni giving power to the Pi. Once started,
 the application provides the end-event by pulling a GPIO to low.
 
+![](boot-time-measurement.jpg)
 
 Hardware
 --------
